@@ -1,7 +1,8 @@
 import javax.swing.WindowConstants;
-
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JList;
 import javax.swing.JTextField;
 
 public class frmEstadistica extends JFrame {
@@ -17,12 +18,24 @@ public class frmEstadistica extends JFrame {
         getContentPane().add(lbDato);
 
         JTextField txDato=new JTextField("");
-        txDato.setBounds(100,10,100,25);
-        getContentPane().add(txDato);
+        txDato.setBounds(80,10,100,25);
+        getContentPane().add(txDato);   
 
         JLabel  lblDatos=new JLabel("La muestra");
-        lblDatos.setBounds(210,10,100,25);
+        lblDatos.setBounds(250,10,100,25);
         getContentPane().add(lblDatos);
+
+        JButton btnAgregar=new JButton("Agregar");
+        btnAgregar.setBounds(80,40,100,25);
+        getContentPane().add(btnAgregar);
+
+        JButton btnQuitar=new JButton("Quitar");
+        btnQuitar.setBounds(80,70,100,25);
+        getContentPane().add(btnQuitar);
+
+        JList lstMuestra=new JList();
+        lstMuestra.setBounds(250,40,100,150);
+        getContentPane().add(lstMuestra);
 
     }
 }
