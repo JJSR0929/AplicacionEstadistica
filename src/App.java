@@ -1,5 +1,5 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        new frmEstadistica().setVisible(true);
+        new FrmEstadistica().setVisible(true);
     }
 }
